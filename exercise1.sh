@@ -1,6 +1,13 @@
 #!/bin/sh
 
-gcc exercise1.c  -o exercise1C
-./exercise1C
-  
+echo "Enter the file name."
+read filename
+
+if [ -f $filename ]
+then
+    gcc $filename -o exercise1C
+    ./exercise1C
+else
+        echo "please create file first"
+    fi
   
