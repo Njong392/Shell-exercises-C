@@ -23,7 +23,7 @@ int main(){
  const char *buf = first_letters;
  ssize_t nr;
  
- /*writing the string to name_fd */
+ 
  nr = write(write_fd, buf, strlen(buf));
 	
 
